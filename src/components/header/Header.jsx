@@ -14,7 +14,7 @@ const Header = ({ user, onLogout }) => {
   ].filter(Boolean);
 
   const inActiveNav = "text-white hover:text-sky-blue";
-  const activeNav = "text-golden-yellow";
+  const activeNav = "text-golden-yellow font-semibold";
 
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
