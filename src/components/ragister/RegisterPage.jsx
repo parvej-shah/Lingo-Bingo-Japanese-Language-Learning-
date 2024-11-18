@@ -14,15 +14,13 @@ const RegisterPage = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const [googleAuthLoading, setGoogleAuthLoading] = useState(false);
-  const {createUser} = useAuth();
+  const {createUser,googleAuthLoading,loginWithGoggle,setGoogleAuthLoading} = useAuth();
   const handleRegister = (data) => {
     const { name, email, photoURL, password } = data;
     createUser(email,password)
     .then(res=>{
-        toast.warning(res.user);
         toast.success("Registration successful!");
-        navigate("/home");
+        navigate("/");
     })
     .catch((error) => {
         if (error.code === 'auth/email-already-in-use') {
@@ -45,23 +43,40 @@ const RegisterPage = () => {
             toast.error('An unknown error occurred.');
           }
       });
-
-    if (name && email && photoURL && password) {
-      
-    } else {
-      
-    }
   };
 
   const handleGoogleLogin = () => {
     setGoogleAuthLoading(true);
-
-    // Simulate Google authentication
-    setTimeout(() => {
+    loginWithGoggle()
+    .then((result) => {
+      setTimeout(() => {
+        setGoogleAuthLoading(false);
+        toast.success("Google login successful!");
+        navigate("/");
+      }, 1000);
+    })
+    .catch((error) => {
       setGoogleAuthLoading(false);
-      toast.success("Google login successful!");
-      navigate("/home");
-    }, 1000);
+      if (error.code === 'auth/popup-closed-by-user') {
+        toast.error('The popup was closed before completing the sign-in.');
+      } else if (error.code === 'auth/cancelled-popup-request') {
+        toast.error('Sign-in process was canceled.');
+      } else if (error.code === 'auth/account-exists-with-different-credential') {
+        toast.error('This email is already associated with a different account.');
+      } else if (error.code === 'auth/operation-not-allowed') {
+        toast.error('Google sign-in is not enabled. Please contact support.');
+      } else if (error.code === 'auth/network-request-failed') {
+        toast.error('Network error. Please check your connection.');
+      } else if (error.code === 'auth/timeout') {
+        toast.error('The request timed out. Please try again.');
+      } else if (error.code === 'auth/internal-error') {
+        toast.error('An internal error occurred. Please try again later.');
+      } else if (error.code === 'auth/unauthorized-domain') {
+        toast.error('Unauthorized domain. Please check your Firebase configuration.');
+      } else {
+        toast.error('An unknown error occurred during Google login.');
+      }
+    });
   };
 
   return (

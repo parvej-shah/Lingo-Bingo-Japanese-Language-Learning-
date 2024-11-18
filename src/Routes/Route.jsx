@@ -6,6 +6,7 @@ import Root from '../Pages/Root';
 import RegisterPage from '../components/ragister/RegisterPage';
 import LoginPage from '../components/login/LoginPage';
 import ErrorPage from '../components/errorpage/ErrorPage';
+import ForgotPassword from '../components/login/ForgotPassword';
 
 const router = createBrowserRouter([
     {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
             {
                 path:"/login",
                 element:<LoginPage/>
+            },
+            {
+                path:"/forgot-password",
+                element:<ForgotPassword />
             },
         ]
     },

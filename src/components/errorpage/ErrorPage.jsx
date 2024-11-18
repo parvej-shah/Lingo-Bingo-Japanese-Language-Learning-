@@ -11,7 +11,7 @@ export default function ErrorPage() {
           Page Not Found (ページが見つかりません)
         </h2>
         <p className="text-mount-fuji-gray text-lg mb-6">
-            Perhaps you are lost like an old forgotten street in Japan.
+            Perhaps you are lost like an old forgotten street on ghost City in Japan.
           <br />
           
           Let’s go back to home and continue your adventure!

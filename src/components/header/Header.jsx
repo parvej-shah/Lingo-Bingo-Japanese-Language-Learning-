@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const Header = ({ user, onLogout }) => {
-  user = true;
+  user = false;
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
