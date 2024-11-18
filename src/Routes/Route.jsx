@@ -5,6 +5,7 @@ import {
 import Root from '../Pages/Root';
 import RegisterPage from '../components/ragister/RegisterPage';
 import LoginPage from '../components/login/LoginPage';
+import ErrorPage from '../components/errorpage/ErrorPage';
 
 const router = createBrowserRouter([
     {
@@ -21,5 +22,9 @@ const router = createBrowserRouter([
             },
         ]
     },
+    {
+        path:'*',
+        element:<ErrorPage/>
+    }
     ]);
 export default router;
