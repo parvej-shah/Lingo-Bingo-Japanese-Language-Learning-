@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import { FcGoogle } from "react-icons/fc"; // Google Icon
-import { ClipLoader } from "react-spinners"; // Loading spinner
+import { FcGoogle } from "react-icons/fc";
+import { ClipLoader } from "react-spinners"; 
 import "react-toastify/dist/ReactToastify.css";
+import { useAuth } from "../../authProvider/AuthProvider";
 
 const RegisterPage = () => {
   const navigate = useNavigate();
@@ -14,16 +15,41 @@ const RegisterPage = () => {
     formState: { errors },
   } = useForm();
   const [googleAuthLoading, setGoogleAuthLoading] = useState(false);
-
+  const {createUser} = useAuth();
   const handleRegister = (data) => {
     const { name, email, photoURL, password } = data;
+    createUser(email,password)
+    .then(res=>{
+        toast.warning(res.user);
+        toast.success("Registration successful!");
+        navigate("/home");
+    })
+    .catch((error) => {
+        if (error.code === 'auth/email-already-in-use') {
+            toast.error('Email already in use.');
+          } else if (error.code === 'auth/invalid-email') {
+            toast.error('Invalid email address.');
+          } else if (error.code === 'auth/weak-password') {
+            toast.error('Password is too weak. Please use a stronger password.');
+          } else if (error.code === 'auth/user-disabled') {
+            toast.error('This user has been disabled.');
+          } else if (error.code === 'auth/too-many-requests') {
+            toast.error('Too many requests. Please try again later.');
+          } else if (error.code === 'auth/network-request-failed') {
+            toast.error('Network error. Please check your connection.');
+          } else if (error.code === 'auth/account-exists-with-different-credential') {
+            toast.error('This email is already associated with a different account.');
+          } else if (error.code === 'auth/timeout') {
+            toast.error('The request timed out. Please try again.');
+          } else {
+            toast.error('An unknown error occurred.');
+          }
+      });
 
-    // Simulated registration API call
     if (name && email && photoURL && password) {
-      toast.success("Registration successful!");
-      navigate("/home");
+      
     } else {
-      toast.error("Registration failed! Please try again.");
+      
     }
   };
 
