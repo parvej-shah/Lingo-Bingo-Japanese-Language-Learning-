@@ -74,7 +74,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-soft-gray mt-6 pt-4 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t text-center border-soft-gray mt-6 pt-4 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm">
             Copyright © {new Date().getFullYear()} - All rights reserved by
             <span className="font-semibold"> Lingo Bingo</span>.
