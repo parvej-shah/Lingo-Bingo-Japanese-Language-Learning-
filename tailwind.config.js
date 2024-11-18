@@ -1,12 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}", "./index.html"],
   theme: {
     extend: {
-      colors: {
+      colors:{
         // Base Colors
         'strong-blue': '#3B82F6',
         'sky-blue': '#60A5FA',
@@ -28,7 +25,7 @@ export default {
         'cherry-blossom-pink': '#FDF2F2',
         'mount-fuji-gray': '#9CA3AF',
         'light-blue-gray': '#E0F2FE',
-      },
+      }
     },
   },
   plugins: [require('daisyui'),],
