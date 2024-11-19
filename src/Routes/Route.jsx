@@ -7,12 +7,17 @@ import RegisterPage from '../components/ragister/RegisterPage';
 import LoginPage from '../components/login/LoginPage';
 import ErrorPage from '../components/errorpage/ErrorPage';
 import ForgotPassword from '../components/login/ForgotPassword';
+import Home from '../Pages/Home';
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <Root/>,
         children:[
+            {
+                path:"/",
+                element:<Home/>
+            },
             {
                 path:"/register",
                 element:<RegisterPage/>
