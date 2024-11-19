@@ -80,7 +80,7 @@ const LoginPage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-light-blue-gray via-light-pink to-neutral-gray flex items-center justify-center px-4 py-2">
-      <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md my-8">
+      <div className="bg-neutral-gray shadow-lg rounded-lg p-8 w-full max-w-md my-8">
         <h2 className="text-3xl font-bold text-center text-dark-blue-gray mb-6">
           Login to Lingo Bingo
         </h2>

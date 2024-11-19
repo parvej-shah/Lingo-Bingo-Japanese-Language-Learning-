@@ -81,7 +81,7 @@ const RegisterPage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-light-blue-gray via-light-pink to-neutral-gray flex items-center justify-center px-4 py-4">
-      <div className="bg-white m-2 md:m-8 shadow-lg rounded-lg p-8 w-full max-w-xl">
+      <div className="bg-neutral-gray m-2 md:m-8 shadow-lg rounded-lg p-8 w-full max-w-xl">
         {/* Right Form Section */}
         <div className="w-full">
           <h2 className="text-3xl font-bold text-center text-dark-blue-gray mb-6">

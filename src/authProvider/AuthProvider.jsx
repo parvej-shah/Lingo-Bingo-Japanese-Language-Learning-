@@ -1,17 +1,21 @@
-import { useContext, createContext, useState } from "react";
+import { useContext, createContext, useState, useEffect } from "react";
 import { auth } from "../firebase.init";
 import {
   createUserWithEmailAndPassword,
   signInWithPopup,
   GoogleAuthProvider,
   signInWithEmailAndPassword,
+  onAuthStateChanged,
+  signOut,
 } from "firebase/auth";
+import { toast } from "react-toastify";
 const AuthContext = createContext();
 
 const AuthProvider = ({ children }) => {
   const provider = new GoogleAuthProvider();
   const [googleAuthLoading, setGoogleAuthLoading] = useState(false);
   const [emails,setEmails] = useState(null);
+  const [user,setUser] = useState(null);
   const createUser = (email, password) => {
     return createUserWithEmailAndPassword(auth, email, password);
   };
@@ -21,6 +25,24 @@ const AuthProvider = ({ children }) => {
   const loginWithGoggle = () => {
     return signInWithPopup(auth, provider);
   };
+  useEffect(()=>{
+    const unSubscribe = onAuthStateChanged(auth, (userResult) => {
+      if (userResult) {
+        setUser(userResult);
+      } else {
+        setUser(null);
+      }
+    });
+    return ()=> unSubscribe();
+  },[])
+  const onLogout = ()=>{
+    signOut(auth)
+    .then(() => {
+      toast.success("Sign-out successful!");
+    }).catch((error) => {
+      toast.success("An Error Occured!");
+    });
+  }
   const value = {
     createUser,
     loginWithGoggle,
@@ -28,7 +50,9 @@ const AuthProvider = ({ children }) => {
     setGoogleAuthLoading,
     signInUser,
     emails,
-    setEmails
+    setEmails,
+    user,
+    onLogout
   };
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 };

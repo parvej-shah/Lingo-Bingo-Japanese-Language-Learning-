@@ -7,7 +7,6 @@ import { auth } from "../../firebase.init";
 import { useAuth } from "../../authProvider/AuthProvider";
 
 export default function ForgotPassword() {
-  const location = useLocation();
 const {emails} = useAuth();
   const {
     register,

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { useAuth } from "../../authProvider/AuthProvider";
 
-const Header = ({ user, onLogout }) => {
-  user = false;
+const Header = () => {
+  const { user, onLogout } = useAuth();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
@@ -30,7 +31,6 @@ const Header = ({ user, onLogout }) => {
       <nav className="bg-dark-blue-gray">
         <div className="navbar container mx-auto">
           <div className="navbar-start">
-            {/* Hamburger Menu for Mobile */}
             <div className="dropdown">
               <div
                 tabIndex={0}
@@ -92,13 +92,13 @@ const Header = ({ user, onLogout }) => {
             {user ? (
               <div className="flex justify-center items-center gap-2">
                 <img
-                  src={"https://fastly.picsum.photos/id/27/3264/1836.jpg?hmac=p3BVIgKKQpHhfGRRCbsi2MCAzw8mWBCayBsKxxtWO8g"}
+                  src={user?.photoURL || "https://fastly.picsum.photos/id/27/3264/1836.jpg?hmac=p3BVIgKKQpHhfGRRCbsi2MCAzw8mWBCayBsKxxtWO8g"}
                   alt="User"
                   className="w-8 h-8 rounded-full object-cover"
                 />
                 <button
                   onClick={onLogout}
-                  className="bg-cherry-blossom-red text-white hover:bg-red py-2 px-4 rounded-lg font-semibold"
+                  className="bg-cherry-blossom-red text-white hover:bg-red py-2 px-4 rounded-md font-semibold"
                 >
                   Log Out
                 </button>
@@ -106,7 +106,7 @@ const Header = ({ user, onLogout }) => {
             ) : (
               <NavLink
                 to="/login"
-                className="text-white bg-cherry-blossom-red py-2 px-4 rounded-lg hover:bg-red font-semibold"
+                className="text-white bg-cherry-blossom-red py-2 px-4 rounded-md hover:bg-red font-semibold"
               >
                 Log In
               </NavLink>

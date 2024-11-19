@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 export default function ErrorPage() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-light-blue-gray via-light-pink to-neutral-gray px-4">
-      <div className="text-center max-w-xl bg-white/50 px-8 py-12 my-8 shadow-lg rounded-lg">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-cherry-blossom-red  to-red px-4">
+      <div className="text-center max-w-xl bg-gradient-to-br  from-light-blue-gray via-light-pink to-neutral-gray px-8 py-12 my-8 shadow-lg rounded-lg">
         <img src={ghostError} alt="Ghost Error" className="w-1/2 mx-auto mb-6 animate-bounce" />
         <h2 className="text-3xl font-bold text-dark-blue-gray mb-4">
           Page Not Found (ページが見つかりません)
