@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="bg-neutral-gray p-10">
-      <footer className=" text-dark-blue-gray container mx-auto">
+    <div className="bg-dark-blue-gray p-10 text-white">
+      <footer className=" text-white container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div>
             <h6 className="text-lg font-semibold mb-4 text-strong-blue">
