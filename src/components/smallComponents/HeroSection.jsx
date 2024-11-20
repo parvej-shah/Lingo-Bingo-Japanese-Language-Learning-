@@ -6,9 +6,6 @@ import { FaCheckCircle, FaUserGraduate } from "react-icons/fa";
 import female1 from '../../assets/Images/female1.png'
 import female2 from '../../assets/Images/female2.png'
 import female3 from '../../assets/Images/female3.png'
-import "react-responsive-carousel/lib/styles/carousel.min.css"; 
-import { Carousel } from 'react-responsive-carousel';
-import { FaPagelines, FaVideo, FaUsers } from "react-icons/fa";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 // Import Swiper styles
@@ -20,13 +17,15 @@ const HeroSection = () => {
   const [reloadSlide, setReloadSlide] = useState([]);
 
   useEffect(() => {
-    AOS.init({ duration: 1500 });
+    AOS.init({ duration: 1500 ,
+      once: false,
+    });
     AOS.refresh();
   }, [reloadSlide]);
   return (
     <section className= "bg-gradient-to-br from-neutral-gray to-light-blue-gray pt-14 flex items-center justify-center w-full">
       <Swiper
-      className="p-0"
+      className="p-0 w-full"
       modules={[Autoplay, Pagination, Navigation]}
       autoplay={{
         delay: 3500,
@@ -36,12 +35,12 @@ const HeroSection = () => {
         clickable: true,
       }}
       
-      spaceBetween={50}
+      spaceBetween={0}
       slidesPerView={1}
       onSlideChange={() =>setReloadSlide([true])}
       onSwiper={(swiper) => setReloadSlide([true])}
     >
-      <SwiperSlide >
+      <SwiperSlide className="w-full">
         <div className="container mx-auto pb-12 md:pb-0 px-2 sm:px-6  xl:px-20">
       <div className="w-full flex flex-col-reverse lg:flex-row md:justify-between items-center">
         <div
@@ -113,7 +112,7 @@ const HeroSection = () => {
       </div>
       </div>
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide className="w-full">
       <div className="container mx-auto pb-12 md:pb-0 px-2 sm:px-6  xl:px-20">
       <div className="w-full flex flex-col-reverse lg:flex-row md:justify-between items-center">
         <div
@@ -178,7 +177,7 @@ const HeroSection = () => {
       </div>
       </div>
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide className="w-full">
       <div className="container mx-auto pb-12 md:pb-0 px-2 sm:px-6 xl:px-20">
       <div className="w-full flex flex-col-reverse lg:flex-row md:justify-between items-center">
         <div
@@ -244,213 +243,6 @@ const HeroSection = () => {
       </div>
       </SwiperSlide>
     </Swiper>
-      <div className="container mx-auto  px-2 sm:px-6  xl:px-20 hidden">
-      <div className="w-full flex flex-col-reverse lg:flex-row md:justify-between items-center">
-        <div
-          className="lg:w-1/2 lg:pr-4 text-center lg:text-left "
-          data-aos="fade-right"
-        >
-          <h1 className="text-4xl sm:text-5xl font-bold text-dark-blue-gray mb-4">
-            Learn Japanese and <span className="text-strong-blue">Move Forward</span>
-          </h1>
-          <p className="text-mount-fuji-gray mb-6">
-            Master Japanese with our interactive courses and practical lessons.
-            Build your confidence and grow your skills with over 60+ engaging courses.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center gap-4">
-            <button className="btn btn-primary bg-cherry-blossom-red hover:bg-red text-white px-6 py-3 rounded-lg border-cherry-blossom-red">
-              Get Started
-            </button>
-            <button className="btn btn-outline border-cherry-blossom-red hover:border-red text-cherry-blossom-red hover:bg-cherry-blossom-pink hover:text-red px-6 py-3 rounded-lg flex items-center gap-2">
-              <AiOutlinePlayCircle size={20} /> Watch Intro
-            </button>
-          </div>
-        </div>
-        <div className="lg:w-1/2 flex flex-col items-center relative w-full ">
-          <img
-            src={female1 }
-            alt="Student learning Japanese"
-            className="rounded-lg mb-6 lg:mb-0 lg:ml-6 w-full h-full "
-            data-aos="fade-left"
-          />
-          <div
-            className="absolute top-2 right-2 md:top-24 md:right-[5%] bg-light-blue p-1  md:p-4 rounded-lg shadow-md  flex items-center flex-col justify-center"
-            data-aos="fade-in"
-          >
-            
-            <div className="flex gap-1 md:gap-2 items-center justify-center text-sm">
-            <FaCheckCircle className="text-strong-blue" size={26} />
-            <p className="text-lg md:text-2xl font-bold text-deep-navy-gray">60+</p>
-            </div>
-              <p className="md:text-base text-xs text-dark-blue-gray"> Interactive Courses</p>
-          </div>
-          <div
-            className="absolute bottom-28 left-10 bg-light-pink text-cherry-blossom-red p-4 rounded-lg shadow-md hidden lg:flex items-center gap-2"
-            data-aos="fade-in"
-          > 
-          <div className='flex flex-col gap-1'>
-          <div className="flex gap-2 items-center">
-          <FaCheckCircle className="text-cherry-blossom-red" size={24} />
-          <span>Get 20% off</span>
-          </div>
-          <div className="flex gap-2 items-center">
-          <FaCheckCircle className="text-cherry-blossom-red" size={24} />
-          <span>Learn New Skills</span>
-          </div>
-          </div>
-            
-          </div>
-          <div
-            className="absolute bottom-6 right-14 bg-light-blue-gray text-deep-navy-gray p-4 rounded-lg shadow-md hidden lg:flex justify-center flex-col items-center"
-            data-aos="fade-in"
-          >
-            <div className="flex gap-2 items-center justify-center">
-            <FaUserGraduate className="text-deep-navy-gray" size={26} />
-            <p className="text-2xl font-bold text-deep-navy-gray">1250+</p>
-            </div>
-              <p className="text-dark-blue-gray"> Active Students</p>
-          </div>
-        </div>
-      </div>
-      </div>
-      <div className="container mx-auto hidden">
-      <div className="w-full flex flex-col-reverse lg:flex-row md:justify-between items-center">
-        <div
-          className="lg:w-1/2 lg:pr-4 text-center lg:text-left "
-          data-aos="fade-right"
-        >
-          <h1 className="text-4xl sm:text-5xl font-bold text-dark-blue-gray mb-4">
-            Learn Japanese and <span className="text-strong-blue">Move Forward</span>
-          </h1>
-          <p className="text-mount-fuji-gray mb-6">
-            Master Japanese with our interactive courses and practical lessons.
-            Build your confidence and grow your skills with over 60+ engaging courses.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center gap-4">
-            <button className="btn btn-primary bg-cherry-blossom-red hover:bg-red text-white px-6 py-3 rounded-lg border-cherry-blossom-red">
-              Get Started
-            </button>
-            <button className="btn btn-outline border-cherry-blossom-red hover:border-red text-cherry-blossom-red hover:bg-cherry-blossom-pink hover:text-red px-6 py-3 rounded-lg flex items-center gap-2">
-              <AiOutlinePlayCircle size={20} /> Watch Intro
-            </button>
-          </div>
-        </div>
-        <div className="lg:w-1/2 flex flex-col items-center relative w-full ">
-          <img
-            src={female2 }
-            alt="Student learning Japanese"
-            className="rounded-lg mb-6 lg:mb-0 lg:ml-6 w-full h-full "
-            data-aos="fade-left"
-          />
-          <div
-            className="absolute top-2 right-2 md:top-24 md:right-[5%] bg-light-blue p-1  md:p-4 rounded-lg shadow-md  flex items-center flex-col justify-center"
-            data-aos="fade-in"
-          >
-            
-            <div className="flex gap-1 md:gap-2 items-center justify-center text-sm">
-            <FaCheckCircle className="text-strong-blue" size={26} />
-            <p className="text-lg md:text-2xl font-bold text-deep-navy-gray">60+</p>
-            </div>
-              <p className="md:text-base text-xs text-dark-blue-gray"> Interactive Courses</p>
-          </div>
-          <div
-            className="absolute bottom-28 left-10 bg-light-pink text-cherry-blossom-red p-4 rounded-lg shadow-md hidden lg:flex items-center gap-2"
-            data-aos="fade-in"
-          > 
-          <div className='flex flex-col gap-1'>
-          <div className="flex gap-2 items-center">
-          <FaCheckCircle className="text-cherry-blossom-red" size={24} />
-          <span>Get 20% off</span>
-          </div>
-          <div className="flex gap-2 items-center">
-          <FaCheckCircle className="text-cherry-blossom-red" size={24} />
-          <span>Learn New Skills</span>
-          </div>
-          </div>
-            
-          </div>
-          <div
-            className="absolute bottom-6 right-14 bg-light-blue-gray text-deep-navy-gray p-4 rounded-lg shadow-md hidden lg:flex justify-center flex-col items-center"
-            data-aos="fade-in"
-          >
-            <div className="flex gap-2 items-center justify-center">
-            <FaUserGraduate className="text-deep-navy-gray" size={26} />
-            <p className="text-2xl font-bold text-deep-navy-gray">1250+</p>
-            </div>
-              <p className="text-dark-blue-gray"> Active Students</p>
-          </div>
-        </div>
-      </div>
-      </div>
-      <div className="container mx-auto hidden">
-      <div className="w-full flex flex-col-reverse lg:flex-row md:justify-between items-center">
-        <div
-          className="lg:w-1/2 lg:pr-4 text-center lg:text-left "
-          data-aos="fade-right"
-        >
-          <h1 className="text-4xl sm:text-5xl font-bold text-dark-blue-gray mb-4">
-            Learn Japanese and <span className="text-strong-blue">Move Forward</span>
-          </h1>
-          <p className="text-mount-fuji-gray mb-6">
-            Master Japanese with our interactive courses and practical lessons.
-            Build your confidence and grow your skills with over 60+ engaging courses.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center gap-4">
-            <button className="btn btn-primary bg-cherry-blossom-red hover:bg-red text-white px-6 py-3 rounded-lg border-cherry-blossom-red">
-              Get Started
-            </button>
-            <button className="btn btn-outline border-cherry-blossom-red hover:border-red text-cherry-blossom-red hover:bg-cherry-blossom-pink hover:text-red px-6 py-3 rounded-lg flex items-center gap-2">
-              <AiOutlinePlayCircle size={20} /> Watch Intro
-            </button>
-          </div>
-        </div>
-        <div className="lg:w-1/2 flex flex-col items-center relative w-full ">
-          <img
-            src={female3 }
-            alt="Student learning Japanese"
-            className="rounded-lg mb-6 lg:mb-0 lg:ml-6 w-full h-full "
-            data-aos="fade-left"
-          />
-          <div
-            className="absolute top-2 right-2 md:top-24 md:right-[5%] bg-light-blue p-1  md:p-4 rounded-lg shadow-md  flex items-center flex-col justify-center"
-            data-aos="fade-in"
-          >
-            
-            <div className="flex gap-1 md:gap-2 items-center justify-center text-sm">
-            <FaCheckCircle className="text-strong-blue" size={26} />
-            <p className="text-lg md:text-2xl font-bold text-deep-navy-gray">60+</p>
-            </div>
-              <p className="md:text-base text-xs text-dark-blue-gray"> Interactive Courses</p>
-          </div>
-          <div
-            className="absolute bottom-28 left-10 bg-light-pink text-cherry-blossom-red p-4 rounded-lg shadow-md hidden lg:flex items-center gap-2"
-            data-aos="fade-in"
-          > 
-          <div className='flex flex-col gap-1'>
-          <div className="flex gap-2 items-center">
-          <FaCheckCircle className="text-cherry-blossom-red" size={24} />
-          <span>Get 20% off</span>
-          </div>
-          <div className="flex gap-2 items-center">
-          <FaCheckCircle className="text-cherry-blossom-red" size={24} />
-          <span>Learn New Skills</span>
-          </div>
-          </div>
-            
-          </div>
-          <div
-            className="absolute bottom-6 right-14 bg-light-blue-gray text-deep-navy-gray p-4 rounded-lg shadow-md hidden lg:flex justify-center flex-col items-center"
-            data-aos="fade-in"
-          >
-            <div className="flex gap-2 items-center justify-center">
-            <FaUserGraduate className="text-deep-navy-gray" size={26} />
-            <p className="text-2xl font-bold text-deep-navy-gray">1250+</p>
-            </div>
-              <p className="text-dark-blue-gray"> Active Students</p>
-          </div>
-        </div>
-      </div>
-      </div>
     </section>
   );
 };

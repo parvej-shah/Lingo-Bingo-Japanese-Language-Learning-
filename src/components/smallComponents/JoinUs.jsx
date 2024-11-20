@@ -12,9 +12,9 @@ const JoinUs = () => {
 
   return (
     <section className="bg-neutral-gray py-16 px-6 sm:px-12 lg:px-20">
-      <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center gap-12">
+      <div className="container mx-auto flex flex-col-reverse lg:flex-row-reverse items-center gap-12">
         {/* Left Section: Image */}
-        <div className="lg:w-1/2" data-aos="fade-right">
+        <div className="lg:w-1/2" data-aos="fade-left">
           <img
             src={mountainFuji}
             alt="Japanese Culture"
@@ -23,7 +23,7 @@ const JoinUs = () => {
         </div>
 
         {/* Right Section: Content */}
-        <div className="lg:w-1/2 text-center lg:text-left" data-aos="fade-left">
+        <div className="lg:w-1/2 text-center lg:text-left" data-aos="fade-right">
           <h1 className="text-4xl sm:text-5xl font-bold text-dark-blue-gray mb-4">
             Find Out Why You Should Learn With Lingo Bingo
           </h1>

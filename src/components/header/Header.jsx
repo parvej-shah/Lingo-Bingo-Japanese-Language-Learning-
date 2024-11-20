@@ -14,8 +14,8 @@ const Header = () => {
     user && { name: "My Profile", to: "/my-profile" },
   ].filter(Boolean);
 
-  const inActiveNav = "text-white hover:text-sky-blue";
-  const activeNav = "text-golden-yellow font-semibold";
+  const inActiveNav = "btn bg-transparent border-none font-normal text-white hover:text-sky-blue";
+  const activeNav = "btn bg-transparent border-none text-golden-yellow font-semibold";
 
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
