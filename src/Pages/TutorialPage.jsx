@@ -41,7 +41,6 @@ const TutorialPage = () => {
             className="bg-white shadow-md rounded-lg overflow-hidden"
             data-aos="fade-up"
           >
-            {/* Embedded YouTube Video */}
             <iframe
               className="w-full h-60"
               src={video}
@@ -53,13 +52,12 @@ const TutorialPage = () => {
             {/* Card Content */}
             <div className="p-4 text-center">
               <h2 className="text-lg font-semibold text-dark-blue-gray">
-                Tutorial {index + 1}
+                Episode {index + 1}
               </h2>
             </div>
           </div>
         ))}
       </div>
-
       <div className="mt-10 text-center">
         <Link
           to={"/start-lesson"}
