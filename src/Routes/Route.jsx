@@ -9,6 +9,8 @@ import ErrorPage from '../components/errorpage/ErrorPage';
 import ForgotPassword from '../components/login/ForgotPassword';
 import Home from '../Pages/Home';
 import TutorialPage from '../Pages/TutorialPage';
+import LetsLearnPage from '../Pages/LetsLearnPage';
+import LessonPage from '../Pages/LessonPage';
 
 const router = createBrowserRouter([
     {
@@ -22,6 +24,19 @@ const router = createBrowserRouter([
             {
                 path:"/tutorials",
                 element:<TutorialPage/>
+            },
+            {
+                path:"/start-learning",
+                element:<LetsLearnPage/>
+            },
+            {
+                path:"/my-profile",
+                element:<LetsLearnPage/>
+            },
+            {
+                path:"/lesson/:lesson_no",
+                loader:()=>fetch('/japaneesWord.json'),
+                element:<LessonPage/>
             },
             {
                 path:"/register",

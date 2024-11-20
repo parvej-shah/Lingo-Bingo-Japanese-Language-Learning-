@@ -54,7 +54,7 @@ const Header = () => {
                 </svg>
               </div>
               {isMenuOpen && (
-                <ul className="menu menu-sm dropdown-content bg-dark-blue-gray rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                <ul className="menu menu-sm dropdown-content bg-dark-blue-gray rounded-box z-[10] mt-3 w-52 p-2 shadow">
                   {navLinks.map((link, index) => (
                     <li key={index}>
                       <NavLink

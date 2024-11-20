@@ -26,6 +26,7 @@ const TutorialPage = () => {
 
   return (
     <div className="min-h-screen bg-neutral-gray p-6">
+    <div className="container mx-auto">
 
       <h1
         className="text-4xl md:text-5xl font-bold text-center text-strong-blue mb-10"
@@ -60,13 +61,14 @@ const TutorialPage = () => {
       </div>
       <div className="mt-10 text-center">
         <Link
-          to={"/start-lesson"}
+          to={"/start-learning"}
           className="px-6 py-3 bg-strong-blue text-white font-bold rounded-lg shadow-lg hover:bg-sky-blue transition-all duration-300 transform hover:scale-105"
           data-aos="fade-up"
         >
           Learn Vocabularies
         </Link>
       </div>
+    </div>
     </div>
   );
 };

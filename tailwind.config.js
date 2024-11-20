@@ -4,7 +4,6 @@ export default {
   theme: {
     extend: {
       colors:{
-        // Base Colors
         'strong-blue': '#3B82F6',
         'sky-blue': '#60A5FA',
         'cherry-blossom-red': '#FF5C5C',

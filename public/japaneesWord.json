@@ -71,7 +71,7 @@
     "pronunciation": "Sumimasen",
     "meaning": "Excuse me / I'm sorry",
     "part_of_speech": "expression",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 2,
     "when_to_say": "Used to apologize or get someone's attention.",
     "example": "Sumimasen, doko desu ka? (Excuse me, where is it?)"
@@ -82,7 +82,7 @@
     "pronunciation": "Wakarimasu",
     "meaning": "I understand",
     "part_of_speech": "verb",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 2,
     "when_to_say": "Used to confirm understanding.",
     "example": "Wakarimashita! (I understand!)"
@@ -93,7 +93,7 @@
     "pronunciation": "Ogenki desu ka",
     "meaning": "How are you?",
     "part_of_speech": "question",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 2,
     "when_to_say": "Used to ask about someone's well-being.",
     "example": "Ogenki desu ka? (How are you?)"
@@ -104,7 +104,7 @@
     "pronunciation": "Tomodachi",
     "meaning": "Friend",
     "part_of_speech": "noun",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 2,
     "when_to_say": "Used when referring to a friend.",
     "example": "Kare wa tomodachi desu. (He is my friend.)"
@@ -115,7 +115,7 @@
     "pronunciation": "Benkyou",
     "meaning": "Study",
     "part_of_speech": "noun",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 3,
     "when_to_say": "Used to refer to studying or studying activity.",
     "example": "Benkyou ga suki desu. (I like studying.)"
@@ -126,7 +126,7 @@
     "pronunciation": "Gakkou",
     "meaning": "School",
     "part_of_speech": "noun",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 3,
     "when_to_say": "Used to refer to a school.",
     "example": "Gakkou ni ikimasu. (I am going to school.)"
@@ -137,7 +137,7 @@
     "pronunciation": "Taberu",
     "meaning": "To eat",
     "part_of_speech": "verb",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 3,
     "when_to_say": "Used to express eating action.",
     "example": "Asagohan wo tabemasu. (I will eat breakfast.)"
@@ -148,7 +148,7 @@
     "pronunciation": "Nomu",
     "meaning": "To drink",
     "part_of_speech": "verb",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 3,
     "when_to_say": "Used to express drinking action.",
     "example": "Koucha wo nomimasu. (I drink tea.)"
@@ -159,7 +159,7 @@
     "pronunciation": "Tanoshii",
     "meaning": "Fun / Enjoyable",
     "part_of_speech": "adjective",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 4,
     "when_to_say": "Used to describe something that is fun or enjoyable.",
     "example": "Tanoshii desu ne! (It's fun, isn't it?)"
@@ -170,7 +170,7 @@
     "pronunciation": "Isogashii",
     "meaning": "Busy",
     "part_of_speech": "adjective",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 4,
     "when_to_say": "Used to describe a busy situation or person.",
     "example": "Watashi wa isogashii desu. (I am busy.)"
@@ -181,7 +181,7 @@
     "pronunciation": "Ame",
     "meaning": "Rain",
     "part_of_speech": "noun",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 4,
     "when_to_say": "Used to describe weather.",
     "example": "Ame ga futteimasu. (It's raining.)"
@@ -192,7 +192,7 @@
     "pronunciation": "Ie",
     "meaning": "House",
     "part_of_speech": "noun",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 4,
     "when_to_say": "Used to refer to home or house.",
     "example": "Ie ni kaerimasu. (I am going home.)"
@@ -203,7 +203,7 @@
     "pronunciation": "Hon",
     "meaning": "Book",
     "part_of_speech": "noun",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 5,
     "when_to_say": "Used when referring to a book.",
     "example": "Hon wo yomimasu. (I read a book.)"
@@ -214,7 +214,7 @@
     "pronunciation": "Eiga",
     "meaning": "Movie",
     "part_of_speech": "noun",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 5,
     "when_to_say": "Used when referring to a movie.",
     "example": "Eiga wo mimasu. (I watch a movie.)"
@@ -225,7 +225,7 @@
     "pronunciation": "Ongaku",
     "meaning": "Music",
     "part_of_speech": "noun",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 5,
     "when_to_say": "Used when referring to music.",
     "example": "Ongaku wo kiku no ga suki desu. (I like listening to music.)"
@@ -236,7 +236,7 @@
     "pronunciation": "Shokuji",
     "meaning": "Meal",
     "part_of_speech": "noun",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 5,
     "when_to_say": "Used when referring to meals.",
     "example": "Shokuji wo tabemasu. (I will eat a meal.)"
@@ -247,7 +247,7 @@
     "pronunciation": "Neru",
     "meaning": "To sleep",
     "part_of_speech": "verb",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 6,
     "when_to_say": "Used to express sleeping action.",
     "example": "Watashi wa yoru ni neru. (I sleep at night.)"
@@ -258,7 +258,7 @@
     "pronunciation": "Okiru",
     "meaning": "To wake up",
     "part_of_speech": "verb",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 6,
     "when_to_say": "Used to express waking up.",
     "example": "Watashi wa asa 7-ji ni okimasu. (I wake up at 7 AM.)"
@@ -269,7 +269,7 @@
     "pronunciation": "Ookii",
     "meaning": "Big",
     "part_of_speech": "adjective",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 6,
     "when_to_say": "Used to describe something big.",
     "example": "Kono biru wa totemo ookii desu. (This building is very big.)"
@@ -280,7 +280,7 @@
     "pronunciation": "Chiisai",
     "meaning": "Small",
     "part_of_speech": "adjective",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 6,
     "when_to_say": "Used to describe something small.",
     "example": "Chiisai inu ga imasu. (There is a small dog.)"
@@ -291,7 +291,7 @@
     "pronunciation": "Atarashii",
     "meaning": "New",
     "part_of_speech": "adjective",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 7,
     "when_to_say": "Used to describe something new.",
     "example": "Atarashii kuruma wo katta. (I bought a new car.)"
@@ -302,7 +302,7 @@
     "pronunciation": "Furui",
     "meaning": "Old",
     "part_of_speech": "adjective",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 7,
     "when_to_say": "Used to describe something old.",
     "example": "Furui hon wo motteimasu. (I have an old book.)"
@@ -313,7 +313,7 @@
     "pronunciation": "Hayai",
     "meaning": "Fast",
     "part_of_speech": "adjective",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 7,
     "when_to_say": "Used to describe speed or something fast.",
     "example": "Kare wa hayaku hashirimasu. (He runs fast.)"
@@ -324,7 +324,7 @@
     "pronunciation": "Osoi",
     "meaning": "Slow",
     "part_of_speech": "adjective",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 7,
     "when_to_say": "Used to describe something slow.",
     "example": "Jikan ga osoi desu. (Time is slow.)"
@@ -335,7 +335,7 @@
     "pronunciation": "Utsukushii",
     "meaning": "Beautiful",
     "part_of_speech": "adjective",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 7,
     "when_to_say": "Used to describe beauty.",
     "example": "Kanojo wa utsukushii desu. (She is beautiful.)"
@@ -346,7 +346,7 @@
     "pronunciation": "Muzukashii",
     "meaning": "Difficult",
     "part_of_speech": "adjective",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 8,
     "when_to_say": "Used to describe difficulty.",
     "example": "Kono mondai wa muzukashii desu. (This problem is difficult.)"
@@ -357,7 +357,7 @@
     "pronunciation": "Kantan",
     "meaning": "Easy / Simple",
     "part_of_speech": "adjective",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 8,
     "when_to_say": "Used to describe something easy or simple.",
     "example": "Kantan na mondai desu. (This is an easy question.)"
@@ -368,7 +368,7 @@
     "pronunciation": "Tashika",
     "meaning": "Certain / Sure",
     "part_of_speech": "adjective",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 8,
     "when_to_say": "Used to express certainty.",
     "example": "Tashika ni, kare wa koko ni imasu. (Certainly, he is here.)"
@@ -379,7 +379,7 @@
     "pronunciation": "Ooi",
     "meaning": "Many",
     "part_of_speech": "adjective",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 8,
     "when_to_say": "Used to describe a large quantity.",
     "example": "Hito ga ooi desu. (There are many people.)"
@@ -390,7 +390,7 @@
     "pronunciation": "Sukunai",
     "meaning": "Few / Little",
     "part_of_speech": "adjective",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 8,
     "when_to_say": "Used to describe a small quantity.",
     "example": "Koko ni wa hito ga sukunai desu. (There are few people here.)"
@@ -401,7 +401,7 @@
     "pronunciation": "Gakki",
     "meaning": "Musical instrument",
     "part_of_speech": "noun",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 9,
     "when_to_say": "Used to refer to a musical instrument.",
     "example": "Piano wa gakki no hitotsu desu. (Piano is a musical instrument.)"
@@ -412,7 +412,7 @@
     "pronunciation": "Eigakan",
     "meaning": "Movie theater",
     "part_of_speech": "noun",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 9,
     "when_to_say": "Used when referring to a cinema.",
     "example": "Eigakan ni ikimashita. (I went to the movie theater.)"
@@ -423,7 +423,7 @@
     "pronunciation": "Kouen",
     "meaning": "Park",
     "part_of_speech": "noun",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 9,
     "when_to_say": "Used when referring to a public park.",
     "example": "Kouen ni asobi ni ikimasu. (I go to play at the park.)"
@@ -434,7 +434,7 @@
     "pronunciation": "Umi",
     "meaning": "Sea / Ocean",
     "part_of_speech": "noun",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 9,
     "when_to_say": "Used when referring to the sea.",
     "example": "Umi ni ikitai desu. (I want to go to the sea.)"
@@ -445,7 +445,7 @@
     "pronunciation": "Tomodachi",
     "meaning": "Friend",
     "part_of_speech": "noun",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 9,
     "when_to_say": "Used when referring to a friend.",
     "example": "Tomodachi to issho ni asobimasu. (I play with my friend.)"
@@ -456,7 +456,7 @@
     "pronunciation": "Ie",
     "meaning": "House",
     "part_of_speech": "noun",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 10,
     "when_to_say": "Used to refer to one's house or home.",
     "example": "Watashi no ie wa kirei desu. (My house is clean.)"
@@ -467,7 +467,7 @@
     "pronunciation": "Heya",
     "meaning": "Room",
     "part_of_speech": "noun",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 10,
     "when_to_say": "Used when referring to a room.",
     "example": "Koko wa watashi no heya desu. (This is my room.)"
@@ -478,7 +478,7 @@
     "pronunciation": "Tegami",
     "meaning": "Letter",
     "part_of_speech": "noun",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 10,
     "when_to_say": "Used to refer to a letter (written correspondence).",
     "example": "Tegami wo kakimasu. (I write a letter.)"
@@ -489,7 +489,7 @@
     "pronunciation": "Denwa",
     "meaning": "Telephone",
     "part_of_speech": "noun",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 10,
     "when_to_say": "Used to refer to a telephone.",
     "example": "Denwa wo kakemasu. (I make a phone call.)"
@@ -500,7 +500,7 @@
     "pronunciation": "Toshokan",
     "meaning": "Library",
     "part_of_speech": "noun",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 10,
     "when_to_say": "Used when referring to a library.",
     "example": "Toshokan ni ikimasu. (I go to the library.)"
@@ -511,7 +511,7 @@
     "pronunciation": "Hon",
     "meaning": "Book",
     "part_of_speech": "noun",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 10,
     "when_to_say": "Used when referring to a book.",
     "example": "Hon wo yomimasu. (I read a book.)"
@@ -522,7 +522,7 @@
     "pronunciation": "Eiga",
     "meaning": "Movie",
     "part_of_speech": "noun",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 10,
     "when_to_say": "Used when referring to a movie.",
     "example": "Eiga wo mimasu. (I watch a movie.)"
@@ -533,7 +533,7 @@
     "pronunciation": "Taberu",
     "meaning": "To eat",
     "part_of_speech": "verb",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 10,
     "when_to_say": "Used to describe the action of eating.",
     "example": "Watashi wa gohan wo tabemasu. (I eat rice.)"
@@ -555,7 +555,7 @@
     "pronunciation": "Miru",
     "meaning": "To see / To look",
     "part_of_speech": "verb",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "lesson_no": 10,
     "when_to_say": "Used to describe the action of seeing or looking.",
     "example": "Kirei na keshiki wo mimasu. (I see a beautiful view.)"
@@ -566,7 +566,7 @@
     "pronunciation": "Kiku",
     "meaning": "To ask / To listen",
     "part_of_speech": "verb",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "lesson_no": 10,
     "when_to_say": "Used to describe the action of asking or listening.",
     "example": "Watashi wa sensei ni kiku. (I ask the teacher.)"
@@ -577,7 +577,7 @@
     "pronunciation": "Kaku",
     "meaning": "To write",
     "part_of_speech": "verb",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "lesson_no": 10,
     "when_to_say": "Used to describe the action of writing.",
     "example": "E-mail wo kakimasu. (I write an email.)"
@@ -588,7 +588,7 @@
     "pronunciation": "Aruku",
     "meaning": "To walk",
     "part_of_speech": "verb",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "lesson_no": 10,
     "when_to_say": "Used to describe the action of walking.",
     "example": "Asa ni arukimasu. (I walk in the morning.)"
@@ -599,7 +599,7 @@
     "pronunciation": "Hashiru",
     "meaning": "To run",
     "part_of_speech": "verb",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "lesson_no": 10,
     "when_to_say": "Used to describe the action of running.",
     "example": "Kouen de hashirimasu. (I run in the park.)"
@@ -610,7 +610,7 @@
     "pronunciation": "Suwaru",
     "meaning": "To sit",
     "part_of_speech": "verb",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "lesson_no": 10,
     "when_to_say": "Used to describe the action of sitting.",
     "example": "Kisu wo suwarimasu. (I sit on the chair.)"
@@ -621,7 +621,7 @@
     "pronunciation": "Tatsu",
     "meaning": "To stand",
     "part_of_speech": "verb",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "lesson_no": 10,
     "when_to_say": "Used to describe the action of standing.",
     "example": "Kouen de tatsu. (I stand in the park.)"
@@ -632,7 +632,7 @@
     "pronunciation": "Neru",
     "meaning": "To sleep",
     "part_of_speech": "verb",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "lesson_no": 10,
     "when_to_say": "Used to describe the action of sleeping.",
     "example": "Yoru ni neru. (I sleep at night.)"
@@ -643,7 +643,7 @@
     "pronunciation": "Okiru",
     "meaning": "To wake up",
     "part_of_speech": "verb",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "lesson_no": 10,
     "when_to_say": "Used to describe the action of waking up.",
     "example": "Gozen 6-ji ni okimasu. (I wake up at 6 AM.)"
@@ -654,7 +654,7 @@
     "pronunciation": "Kangaeru",
     "meaning": "To think",
     "part_of_speech": "verb",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "lesson_no": 10,
     "when_to_say": "Used to describe the action of thinking.",
     "example": "Shigoto no koto wo kangaemasu. (I think about work.)"
@@ -797,7 +797,7 @@
     "pronunciation": "Kuru",
     "meaning": "To come",
     "part_of_speech": "verb",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "lesson_no": 3,
     "when_to_say": "Used when referring to the action of coming somewhere.",
     "example": "Watashi wa ashita koko ni kimasu. (I will come here tomorrow.)"
@@ -808,7 +808,7 @@
     "pronunciation": "Sumu",
     "meaning": "To live",
     "part_of_speech": "verb",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "lesson_no": 3,
     "when_to_say": "Used when referring to living somewhere.",
     "example": "Tokyo ni sumimasu. (I live in Tokyo.)"
@@ -819,7 +819,7 @@
     "pronunciation": "Wakaru",
     "meaning": "To understand",
     "part_of_speech": "verb",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "lesson_no": 3,
     "when_to_say": "Used when referring to understanding something.",
     "example": "Watashi wa nihongo ga wakarimasu. (I understand Japanese.)"
@@ -830,7 +830,7 @@
     "pronunciation": "Deru",
     "meaning": "To exit / To leave",
     "part_of_speech": "verb",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "lesson_no": 3,
     "when_to_say": "Used when referring to leaving or exiting somewhere.",
     "example": "Watashi wa uchi wo demasu. (I leave my house.)"
@@ -841,7 +841,7 @@
     "pronunciation": "Hashiru",
     "meaning": "To run",
     "part_of_speech": "verb",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "lesson_no": 3,
     "when_to_say": "Used when describing the action of running.",
     "example": "Kouen de hashirimasu. (I run in the park.)"
@@ -852,7 +852,7 @@
     "pronunciation": "Oyogu",
     "meaning": "To swim",
     "part_of_speech": "verb",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "lesson_no": 3,
     "when_to_say": "Used when referring to the action of swimming.",
     "example": "Umi de oyogimasu. (I swim in the sea.)"
@@ -863,7 +863,7 @@
     "pronunciation": "Taberu",
     "meaning": "To eat",
     "part_of_speech": "verb",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "lesson_no": 3,
     "when_to_say": "Used when referring to the action of eating.",
     "example": "Watashi wa gohan wo tabemasu. (I eat rice.)"
@@ -874,7 +874,7 @@
     "pronunciation": "Yomu",
     "meaning": "To read",
     "part_of_speech": "verb",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "lesson_no": 3,
     "when_to_say": "Used when referring to reading.",
     "example": "Watashi wa hon wo yomimasu. (I read a book.)"
@@ -962,7 +962,7 @@
     "pronunciation": "Ryokō",
     "meaning": "Travel",
     "part_of_speech": "noun",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "lesson_no": 3,
     "when_to_say": "Used when referring to travel.",
     "example": "Ryokō ga tanoshī desu. (Traveling is fun.)"
@@ -973,7 +973,7 @@
     "pronunciation": "Subarashī",
     "meaning": "Wonderful",
     "part_of_speech": "adjective",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "lesson_no": 4,
     "when_to_say": "Used to describe something wonderful.",
     "example": "Subarashī koto ga okimashita. (A wonderful thing happened.)"
@@ -984,7 +984,7 @@
     "pronunciation": "Hayai",
     "meaning": "Fast / Early",
     "part_of_speech": "adjective",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "lesson_no": 4,
     "when_to_say": "Used to describe something or someone as fast or early.",
     "example": "Hayaku arukimasu. (I walk fast.)"
@@ -995,7 +995,7 @@
     "pronunciation": "Osoi",
     "meaning": "Slow / Late",
     "part_of_speech": "adjective",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "lesson_no": 4,
     "when_to_say": "Used to describe something or someone as slow or late.",
     "example": "Osoi densha ga suki desu. (I like slow trains.)"
@@ -1006,7 +1006,7 @@
     "pronunciation": "Omoshiroi",
     "meaning": "Interesting / Fun",
     "part_of_speech": "adjective",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "lesson_no": 4,
     "when_to_say": "Used to describe something interesting or fun.",
     "example": "Kono hon wa omoshiroi desu. (This book is interesting.)"
@@ -1017,7 +1017,7 @@
     "pronunciation": "Muzukashī",
     "meaning": "Difficult",
     "part_of_speech": "adjective",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "lesson_no": 5,
     "when_to_say": "Used to describe something difficult.",
     "example": "Nihongo wa muzukashī desu. (Japanese is difficult.)"
@@ -1028,7 +1028,7 @@
     "pronunciation": "Himitsu",
     "meaning": "Secret",
     "part_of_speech": "noun",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "lesson_no": 5,
     "when_to_say": "Used when referring to a secret.",
     "example": "Kono koto wa himitsu desu. (This matter is a secret.)"
@@ -1039,7 +1039,7 @@
     "pronunciation": "Tsukareru",
     "meaning": "To get tired",
     "part_of_speech": "verb",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "lesson_no": 5,
     "when_to_say": "Used when describing the action of getting tired.",
     "example": "Watashi wa tsukaremashita. (I got tired.)"
@@ -1050,7 +1050,7 @@
     "pronunciation": "Okoru",
     "meaning": "To get angry",
     "part_of_speech": "verb",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "lesson_no": 5,
     "when_to_say": "Used when describing getting angry.",
     "example": "Watashi wa okorimasen. (I am not angry.)"
@@ -1193,7 +1193,7 @@
     "pronunciation": "Benkyō suru",
     "meaning": "To study",
     "part_of_speech": "verb",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "lesson_no": 3,
     "when_to_say": "Used when referring to the action of studying.",
     "example": "Nihongo wo benkyō shimasu. (I study Japanese.)"
@@ -1204,7 +1204,7 @@
     "pronunciation": "Tanoshī",
     "meaning": "Fun / Enjoyable",
     "part_of_speech": "adjective",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "lesson_no": 3,
     "when_to_say": "Used to describe something enjoyable.",
     "example": "Kōen wa tanoshī desu. (The park is fun.)"
@@ -2194,7 +2194,7 @@
     "pronunciation": "Sōzō",
     "meaning": "Imagination",
     "part_of_speech": "noun",
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "lesson_no": 8,
     "when_to_say": "Used when talking about imagination.",
     "example": "Sōzō wa jūyō desu. (Imagination is important.)"
