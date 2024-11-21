@@ -2,9 +2,13 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css"; 
+import { useAuth } from "../authProvider/AuthProvider";
 const AboutUs = () => {
-    useEffect(() => {
-        AOS.init({ duration: 1500 });
+  const {setTitle} = useAuth();
+
+  useEffect(() => {
+        setTitle('About Us|Lingo-Bingo')
+        AOS.init({ duration: 1000 });
       }, []);
   return (
     <div className="min-h-screen bg-neutral-gray p-6 flex flex-col items-center justify-center">

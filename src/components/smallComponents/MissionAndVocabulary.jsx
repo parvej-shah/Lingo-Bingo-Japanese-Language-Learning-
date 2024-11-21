@@ -5,7 +5,7 @@ import "aos/dist/aos.css"; // AOS animation styles
 
 const MissionAndVocabulary = () => {
   useEffect(() => {
-    AOS.init({ duration: 1500 
+    AOS.init({ duration: 1000 
         ,easing: "ease-in-out", // Set easing function
         once: false,
     });

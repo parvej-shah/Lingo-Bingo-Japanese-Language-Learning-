@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -16,7 +16,10 @@ const RegisterPage = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const {createUser,googleAuthLoading,loginWithGoggle,setGoogleAuthLoading} = useAuth();
+  const {createUser,googleAuthLoading,loginWithGoggle,setGoogleAuthLoading,setTitle} = useAuth();
+  useEffect(()=>{
+    setTitle('Register |Lingo-Bingo')
+  },[])
   const handleRegister = (data) => {
     const { name, email, photoURL, password } = data;
     createUser(email,password)

@@ -2,12 +2,15 @@ import React, { useEffect, useState } from "react";
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 import pronounceWord from "../utils/speak";
+import { useAuth } from "../authProvider/AuthProvider";
 const LessonPage = () => {
   const { lesson_no } = useParams();
   const [selectedWord, setSelectedWord] = useState(null);
   const data = useLoaderData();
   const [filteredVocabularies,setFilteredVocabularies] = useState([]);
+  const {setTitle} = useAuth();
   useEffect(()=>{
+    setTitle(`Lesson ${lesson_no}|Lingo-Bingo`);
     const Vocabularies = data.filter(
         (vocab) => vocab.lesson_no === parseInt(lesson_no)
       );

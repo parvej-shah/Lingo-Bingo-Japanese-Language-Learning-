@@ -5,17 +5,19 @@ import {  updateProfile } from "firebase/auth";
 import { auth } from "../../firebase.init";
 import { toast } from "react-toastify";
 import AOS from "aos";
-import "aos/dist/aos.css"; 
+import "aos/dist/aos.css";
+import { useAuth } from "../../authProvider/AuthProvider";
 const UpdateProfile = () => {
-    useEffect(() => {
-        AOS.init({ duration: 1500 });
+  const {setTitle} = useAuth();
+  useEffect(() => {
+      setTitle('Update Profile|Lingo-Bingo')
+        AOS.init({ duration: 1000 });
       }, []);
   const { register, handleSubmit, reset } = useForm();
   const navigate = useNavigate();
   const onSubmit = async (data) => {
     try {
       const user = auth.currentUser;
-
       if (user) {
         await updateProfile(user, {
           displayName: data.name,

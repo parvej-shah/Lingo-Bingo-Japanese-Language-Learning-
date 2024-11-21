@@ -5,8 +5,10 @@ import AOS from "aos";
 import "aos/dist/aos.css"; 
 
 const MyProfile = () => {
-    useEffect(() => {
-        AOS.init({ duration: 1500 });
+  const {setTitle} = useAuth();
+  useEffect(() => {
+      setTitle('My Profile|Lingo-Bingo')
+        AOS.init({ duration: 1000 });
       }, []);
     const {user} = useAuth();
   const { displayName, email, photoURL } = user;

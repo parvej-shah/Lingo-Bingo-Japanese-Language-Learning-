@@ -17,7 +17,7 @@ const HeroSection = () => {
   const [reloadSlide, setReloadSlide] = useState([]);
 
   useEffect(() => {
-    AOS.init({ duration: 1500 ,
+    AOS.init({ duration: 1000 ,
       once: false,
     });
     AOS.refresh();

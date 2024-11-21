@@ -7,7 +7,8 @@ import { auth } from "../../firebase.init";
 import { useAuth } from "../../authProvider/AuthProvider";
 
 export default function ForgotPassword() {
-const {emails} = useAuth();
+const {emails, setTitle} = useAuth();
+
   const {
     register,
     handleSubmit,
@@ -16,6 +17,7 @@ const {emails} = useAuth();
   } = useForm();
 console.log(emails);
   useEffect(() => {
+    setTitle("Reset Password|Lingo-Bingo");
     if (emails) {
       setValue("email", emails);
     }

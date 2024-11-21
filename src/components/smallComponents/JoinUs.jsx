@@ -8,7 +8,7 @@ import mountainFuji from '../../assets/Images/mountain-fuji.jpg'
 import { Link } from "react-router-dom";
 const JoinUs = () => {
   useEffect(() => {
-    AOS.init({ duration: 1500 });
+    AOS.init({ duration: 1000 });
   }, []);
 
   return (

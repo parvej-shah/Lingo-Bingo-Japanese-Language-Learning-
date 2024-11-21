@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate,Link } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -14,8 +14,10 @@ const LoginPage = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const {googleAuthLoading,loginWithGoggle,setGoogleAuthLoading,signInUser,emails,setEmails} = useAuth();
-
+  const {googleAuthLoading,loginWithGoggle,setGoogleAuthLoading,signInUser,emails,setEmails,setTitle} = useAuth();
+  useEffect(()=>{
+    setTitle('Login|Lingo-Bingo');
+  },[])
   const handleLogin = (data) => {
     const { email, password } = data;
     signInUser(email,password)

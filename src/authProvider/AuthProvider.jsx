@@ -14,6 +14,7 @@ const AuthProvider = ({ children }) => {
   const provider = new GoogleAuthProvider();
   const [googleAuthLoading, setGoogleAuthLoading] = useState(false);
   const [emails,setEmails] = useState(null);
+  const [title,setTitle] = useState("Home|Lingo-Bingo");
   const [user,setUser] = useState(null);
   const [loading, setLoading ] = useState(true);
   const createUser = (email, password) => {
@@ -55,7 +56,9 @@ const AuthProvider = ({ children }) => {
     setEmails,
     user,
     onLogout,
-    loading
+    loading,
+    title,
+    setTitle
   };
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 };
