@@ -6,6 +6,8 @@ import { FcGoogle } from "react-icons/fc";
 import { ClipLoader } from "react-spinners"; 
 import "react-toastify/dist/ReactToastify.css";
 import { useAuth } from "../../authProvider/AuthProvider";
+import { updateProfile } from "firebase/auth";
+import { auth } from "../../firebase.init";
 
 const RegisterPage = () => {
   const navigate = useNavigate();
@@ -20,6 +22,13 @@ const RegisterPage = () => {
     createUser(email,password)
     .then(res=>{
         toast.success("Registration successful!");
+        if(name && photoURL){
+          updateProfile(auth.currentUser, {
+            displayName: name, photoURL: photoURL
+          }).then(() => {
+          }).catch((error) => {
+          });
+        }
         navigate("/");
     })
     .catch((error) => {
@@ -82,14 +91,11 @@ const RegisterPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-light-blue-gray via-light-pink to-neutral-gray flex items-center justify-center px-4 py-4">
       <div className="bg-neutral-gray m-2 md:m-8 shadow-lg rounded-lg p-8 w-full max-w-xl">
-        {/* Right Form Section */}
         <div className="w-full">
           <h2 className="text-3xl font-bold text-center text-dark-blue-gray mb-6">
             Register For Lingo Bingo
           </h2>
-
           <form onSubmit={handleSubmit(handleRegister)} className="space-y-4">
-            {/* Name */}
             <div className="form-control">
               <label className="label">
                 <span className="label-text text-mount-fuji-gray">Name</span>
@@ -104,7 +110,6 @@ const RegisterPage = () => {
                 <span className="text-red text-sm">{errors.name.message}</span>
               )}
             </div>
-            {/* Photo URL */}
             <div className="form-control">
               <label className="label">
                 <span className="label-text text-mount-fuji-gray">Photo URL</span>
@@ -119,7 +124,6 @@ const RegisterPage = () => {
                 <span className="text-red text-sm">{errors.photoURL.message}</span>
               )}
             </div>
-            {/* Email */}
             <div className="form-control">
               <label className="label">
                 <span className="label-text text-mount-fuji-gray">Email</span>
@@ -134,8 +138,6 @@ const RegisterPage = () => {
                 <span className="text-red text-sm">{errors.email.message}</span>
               )}
             </div>
-
-            {/* Password */}
             <div className="form-control">
               <label className="label">
                 <span className="label-text text-mount-fuji-gray">Password</span>
@@ -162,19 +164,13 @@ const RegisterPage = () => {
                 <span className="text-red text-sm">{errors.password.message}</span>
               )}
             </div>
-
-            {/* Register Button */}
             <button
               type="submit"
               className="btn btn-primary w-full bg-strong-blue text-white hover:bg-sky-blue">
               Register
             </button>
           </form>
-
-          {/* Or Divider */}
           <div className="divider my-4">OR</div>
-
-          {/* Google Login */}
           <button
             onClick={handleGoogleLogin}
             className="btn btn-outline w-full flex items-center justify-center gap-2 text-dark-blue-gray border-soft-gray hover:bg-light-blue">
@@ -185,8 +181,6 @@ const RegisterPage = () => {
             )}
             Login with Google
           </button>
-
-          {/* Login Link */}
           <p className="text-center mt-4">
             Already have an account?{" "}
             <a href="/login" className="text-cherry-blossom-red hover:underline">

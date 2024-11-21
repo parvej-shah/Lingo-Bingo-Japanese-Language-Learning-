@@ -13,6 +13,7 @@ import LetsLearnPage from '../Pages/LetsLearnPage';
 import LessonPage from '../Pages/LessonPage';
 import MyProfile from '../Pages/MyProfile';
 import PrivateRoute from '../authProvider/PrivateRoute';
+import UpdateProfile from '../components/ragister/UpdateProfile';
 
 const router = createBrowserRouter([
     {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
             {
                 path:"/my-profile",
                 element:<PrivateRoute><MyProfile/></PrivateRoute>
+            },
+            {
+                path:"/update-profile",
+                element:<PrivateRoute><UpdateProfile/></PrivateRoute>
             },
             {
                 path:"/lesson/:lesson_no",

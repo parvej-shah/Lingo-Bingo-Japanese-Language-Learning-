@@ -97,7 +97,7 @@ const Header = () => {
                 <img
                   src={user?.photoURL || "https://fastly.picsum.photos/id/27/3264/1836.jpg?hmac=p3BVIgKKQpHhfGRRCbsi2MCAzw8mWBCayBsKxxtWO8g"}
                   alt="User"
-                  className="w-8 h-8 rounded-full object-cover"
+                  className="w-12 h-12 rounded-full object-cover"
                 />
                 <button
                   onClick={handleLogOut}

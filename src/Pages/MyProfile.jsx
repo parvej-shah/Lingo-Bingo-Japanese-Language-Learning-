@@ -10,15 +10,11 @@ const MyProfile = () => {
       }, []);
     const {user} = useAuth();
     console.log(user);
-  const { displayName, email, image } = user || {
-    name: "Guest",
-    email: "guest@example.com",
-    image: "https://via.placeholder.com/150",
-  };
+  const { displayName, email, photoURL } = user;
   const name = displayName || "Guest";
+  const image = photoURL;
   return (
-    <div className="min-h-screen bg-neutral-gray p-8">
-      {/* Welcome Title */}
+    <div className="min-h-screen bg-neutral-gray p-2 md:p-8">
       <h1
         className="text-4xl md:text-5xl font-bold text-center text-strong-blue mb-10"
         data-aos="fade-up"
@@ -26,23 +22,19 @@ const MyProfile = () => {
         Welcome, {name}!
       </h1>
 
-      {/* Profile Info Card */}
       <div
         className="bg-white shadow-lg rounded-lg max-w-3xl mx-auto p-6 flex flex-col items-center text-center"
         data-aos="fade-up"
       >
-        {/* Profile Image */}
         <img
           src={image}
           alt={`${name}'s profile`}
           className="w-32 h-32 rounded-full mb-6 shadow-md object-cover"
         />
 
-        {/* Profile Details */}
         <h2 className="text-2xl font-bold text-dark-blue-gray mb-2">{name}</h2>
         <p className="text-soft-gray-2 text-lg mb-4">{email}</p>
 
-        {/* Update Button */}
         <Link
           to="/update-profile"
           className="px-6 py-3 bg-strong-blue text-white font-bold rounded-lg shadow-lg hover:bg-sky-blue transition-all duration-300 transform hover:scale-105"
