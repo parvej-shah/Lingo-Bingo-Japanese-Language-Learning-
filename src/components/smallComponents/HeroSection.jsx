@@ -8,10 +8,10 @@ import female2 from '../../assets/Images/female2.png'
 import female3 from '../../assets/Images/female3.png'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   const [reloadSlide, setReloadSlide] = useState([]);
@@ -55,12 +55,12 @@ const HeroSection = () => {
             Build your confidence and grow your skills with over 60+ engaging courses.
           </p>
           <div className="flex md:justify-start justify-center items-center gap-2 md:gap-4" data-aos="fade-right">
-            <button className="btn btn-primary bg-cherry-blossom-red hover:bg-red text-white px-6 py-3 rounded-lg border-cherry-blossom-red">
+            <Link to={'/start-learning'} className="btn btn-primary bg-cherry-blossom-red hover:bg-red text-white px-6 py-3 rounded-lg border-cherry-blossom-red">
               Get Started
-            </button>
-            <button className="btn btn-outline border-cherry-blossom-red hover:border-red text-cherry-blossom-red hover:bg-cherry-blossom-pink hover:text-red px-6 py-3 rounded-lg flex items-center gap-2">
+            </Link>
+            <Link to={'/start-learning'} className="btn btn-outline border-cherry-blossom-red hover:border-red text-cherry-blossom-red hover:bg-cherry-blossom-pink hover:text-red px-6 py-3 rounded-lg flex items-center gap-2">
               <AiOutlinePlayCircle size={20} /> Watch Intro
-            </button>
+            </Link>
           </div>
         </div>
         <div className="lg:w-1/2 flex flex-col items-center relative w-full ">
@@ -126,12 +126,12 @@ const HeroSection = () => {
           Learning Japanese is not just about the language; it's about experiencing the rich culture. Join our specialized lessons that integrate language with traditions, food, and history.
           </p>
           <div className="flex md:justify-start justify-center items-center gap-2 md:gap-4" data-aos="fade-right">
-            <button className="btn btn-primary bg-cherry-blossom-red hover:bg-red text-white px-6 py-3 rounded-lg border-cherry-blossom-red">
+          <Link to={'/start-learning'} className="btn btn-primary bg-cherry-blossom-red hover:bg-red text-white px-6 py-3 rounded-lg border-cherry-blossom-red">
               Get Started
-            </button>
-            <button className="btn btn-outline border-cherry-blossom-red hover:border-red text-cherry-blossom-red hover:bg-cherry-blossom-pink hover:text-red px-6 py-3 rounded-lg flex items-center gap-2">
+            </Link>
+            <Link to={'/start-learning'} className="btn btn-outline border-cherry-blossom-red hover:border-red text-cherry-blossom-red hover:bg-cherry-blossom-pink hover:text-red px-6 py-3 rounded-lg flex items-center gap-2">
               <AiOutlinePlayCircle size={20} /> Watch Intro
-            </button>
+            </Link>
           </div>
         </div>
         <div className="lg:w-1/2 flex flex-col items-center relative w-full ">
@@ -191,12 +191,12 @@ const HeroSection = () => {
           Break the language barrier and communicate effectively in Japanese. Our courses focus on building speaking and listening skills with real-world practice scenarios.
           </p>
           <div className="flex md:justify-start justify-center items-center gap-2 md:gap-4" data-aos="fade-right">
-            <button className="btn btn-primary bg-cherry-blossom-red hover:bg-red text-white px-6 py-3 rounded-lg border-cherry-blossom-red">
+          <Link to={'/start-learning'} className="btn btn-primary bg-cherry-blossom-red hover:bg-red text-white px-6 py-3 rounded-lg border-cherry-blossom-red">
               Get Started
-            </button>
-            <button className="btn btn-outline border-cherry-blossom-red hover:border-red text-cherry-blossom-red hover:bg-cherry-blossom-pink hover:text-red px-6 py-3 rounded-lg flex items-center gap-2">
+            </Link>
+            <Link to={'/start-learning'} className="btn btn-outline border-cherry-blossom-red hover:border-red text-cherry-blossom-red hover:bg-cherry-blossom-pink hover:text-red px-6 py-3 rounded-lg flex items-center gap-2">
               <AiOutlinePlayCircle size={20} /> Watch Intro
-            </button>
+            </Link>
           </div>
         </div>
         <div className="lg:w-1/2 flex flex-col items-center relative w-full ">

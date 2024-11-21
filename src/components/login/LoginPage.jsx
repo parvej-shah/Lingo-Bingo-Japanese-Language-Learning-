@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate,Link } from "react-router-dom";
 import { toast } from "react-toastify";
-import { FcGoogle } from "react-icons/fc"; // Google Icon
-import { ClipLoader } from "react-spinners"; // Loading spinner
+import { FcGoogle } from "react-icons/fc"; 
+import { ClipLoader } from "react-spinners";
 import "react-toastify/dist/ReactToastify.css";
 import { useAuth } from "../../authProvider/AuthProvider";
 

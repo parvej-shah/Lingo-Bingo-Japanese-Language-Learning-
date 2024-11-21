@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 const PricingPlans = () => {
   useEffect(() => {
@@ -90,9 +91,9 @@ const PricingPlans = () => {
                   </li>
                 ))}
               </ul>
-              <button className="w-full py-2 px-4 bg-strong-blue text-white rounded-md hover:bg-sky-blue transition-all">
+              <Link to={'/register'} className="w-full py-2 px-4 bg-strong-blue text-white rounded-md hover:bg-sky-blue transition-all">
                 Register Now
-              </button>
+              </Link>
             </div>
           ))}
         </div>
@@ -100,5 +101,4 @@ const PricingPlans = () => {
     </section>
   );
 };
-
 export default PricingPlans;

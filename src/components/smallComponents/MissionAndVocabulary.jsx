@@ -15,7 +15,6 @@ const MissionAndVocabulary = () => {
   return (
     <section className="bg-light-blue-gray py-16 px-6 sm:px-12 lg:px-20">
       <div className="container mx-auto flex flex-col lg:flex-row items-center gap-12">
-        {/* Left Section: Text Content */}
         <div className="lg:w-1/2 text-center lg:text-left" data-aos="fade-right">
           <h2 className="text-4xl sm:text-5xl font-bold text-dark-blue-gray mb-6">
             Our Mission: Empowering You to Master Japanese
@@ -31,13 +30,10 @@ const MissionAndVocabulary = () => {
             applications.
           </p>
         </div>
-
-        {/* Right Section: Highlights */}
         <div
           className="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-8"
           data-aos="fade-left"
         >
-          {/* Vocabulary Practice Feature */}
           <div className=" bg-white p-6 rounded-lg shadow-md text-center">
           <div className="flex justify-center items-center">
             <FaBullseye size={30} className="text-strong-blue" />
@@ -51,8 +47,6 @@ const MissionAndVocabulary = () => {
               </p>
             </div>
           </div>
-
-          {/* Interactive Vocabulary Lessons */}
           <div className=" bg-white p-6 rounded-lg shadow-md text-center" data-aos="fade-down-left">
           <div className="flex justify-center items-center">
             <FaLanguage size={30} className="text-strong-blue" />
@@ -66,11 +60,8 @@ const MissionAndVocabulary = () => {
               </p>
             </div>
           </div>
-
-          {/* Cultural Context for Words */}
           <div className=" bg-white p-6 rounded-lg shadow-md text-center">
           <div className="flex justify-center items-center">
-            
             <FaBookReader size={30} className="text-strong-blue" />
             </div>
             <div>
@@ -82,12 +73,9 @@ const MissionAndVocabulary = () => {
               </p>
             </div>
           </div>
-
-          {/* Memory Boost Techniques */}
           <div className=" bg-white p-6 rounded-lg shadow-md text-center" data-aos="fade-up-left">
             <div className="flex justify-center items-center">
             <FaMagic size={30} className="text-strong-blue" />
-            
             </div>
             <div>
               <h3 className="font-semibold text-lg text-dark-blue-gray">

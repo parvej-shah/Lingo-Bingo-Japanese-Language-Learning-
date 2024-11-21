@@ -50,7 +50,6 @@ const TutorialPage = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
-            {/* Card Content */}
             <div className="p-4 text-center">
               <h2 className="text-lg font-semibold text-dark-blue-gray">
                 Episode {index + 1}

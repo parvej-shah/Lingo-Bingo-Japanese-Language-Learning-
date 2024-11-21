@@ -7,9 +7,9 @@ import "aos/dist/aos.css";
 const SuccessSection = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration
-      offset: 100, // Distance from viewport to trigger animation
-      once: true, // Trigger animation only once
+      duration: 1000,
+      offset: 100, 
+      once: true, 
     });
   }, []);
 
