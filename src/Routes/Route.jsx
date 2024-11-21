@@ -11,6 +11,8 @@ import Home from '../Pages/Home';
 import TutorialPage from '../Pages/TutorialPage';
 import LetsLearnPage from '../Pages/LetsLearnPage';
 import LessonPage from '../Pages/LessonPage';
+import MyProfile from '../Pages/MyProfile';
+import PrivateRoute from '../authProvider/PrivateRoute';
 
 const router = createBrowserRouter([
     {
@@ -23,7 +25,7 @@ const router = createBrowserRouter([
             },
             {
                 path:"/tutorials",
-                element:<TutorialPage/>
+                element:<PrivateRoute><TutorialPage/></PrivateRoute>
             },
             {
                 path:"/start-learning",
@@ -31,12 +33,12 @@ const router = createBrowserRouter([
             },
             {
                 path:"/my-profile",
-                element:<LetsLearnPage/>
+                element:<PrivateRoute><MyProfile/></PrivateRoute>
             },
             {
                 path:"/lesson/:lesson_no",
                 loader:()=>fetch('/japaneesWord.json'),
-                element:<LessonPage/>
+                element:<PrivateRoute><LessonPage/></PrivateRoute>
             },
             {
                 path:"/register",

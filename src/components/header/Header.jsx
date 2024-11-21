@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { useAuth } from "../../authProvider/AuthProvider";
 
 const Header = () => {
   const { user, onLogout } = useAuth();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const navigate = useNavigate();
   const navLinks = [
     { name: "Home", to: "/" },
     { name: "Start Learning", to: "/start-learning" },
@@ -18,7 +18,10 @@ const Header = () => {
   const activeNav = "btn bg-transparent border-none text-golden-yellow font-semibold";
 
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
-
+  const handleLogOut = ()=>{
+    onLogout();
+    navigate('/');
+  }
   return (
     <header className="bg-light-blue-gray">
       {user && (
@@ -97,7 +100,7 @@ const Header = () => {
                   className="w-8 h-8 rounded-full object-cover"
                 />
                 <button
-                  onClick={onLogout}
+                  onClick={handleLogOut}
                   className="bg-cherry-blossom-red text-white hover:bg-red py-2 px-4 rounded-md font-semibold"
                 >
                   Log Out

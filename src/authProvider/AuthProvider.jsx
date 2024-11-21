@@ -10,12 +10,12 @@ import {
 } from "firebase/auth";
 import { toast } from "react-toastify";
 const AuthContext = createContext();
-
 const AuthProvider = ({ children }) => {
   const provider = new GoogleAuthProvider();
   const [googleAuthLoading, setGoogleAuthLoading] = useState(false);
   const [emails,setEmails] = useState(null);
   const [user,setUser] = useState(null);
+  const [loading, setLoading ] = useState(true);
   const createUser = (email, password) => {
     return createUserWithEmailAndPassword(auth, email, password);
   };
@@ -28,8 +28,10 @@ const AuthProvider = ({ children }) => {
   useEffect(()=>{
     const unSubscribe = onAuthStateChanged(auth, (userResult) => {
       if (userResult) {
+        setLoading(false);
         setUser(userResult);
       } else {
+        setLoading(true);
         setUser(null);
       }
     });
@@ -52,7 +54,8 @@ const AuthProvider = ({ children }) => {
     emails,
     setEmails,
     user,
-    onLogout
+    onLogout,
+    loading
   };
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 };
