@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import {  updateProfile } from "firebase/auth";
 import { auth } from "../../firebase.init";
 import { toast } from "react-toastify";
-
+import AOS from "aos";
+import "aos/dist/aos.css"; 
 const UpdateProfile = () => {
+    useEffect(() => {
+        AOS.init({ duration: 1500 });
+      }, []);
   const { register, handleSubmit, reset } = useForm();
   const navigate = useNavigate();
   const onSubmit = async (data) => {

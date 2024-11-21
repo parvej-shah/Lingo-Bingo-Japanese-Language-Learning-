@@ -9,7 +9,6 @@ const MyProfile = () => {
         AOS.init({ duration: 1500 });
       }, []);
     const {user} = useAuth();
-    console.log(user);
   const { displayName, email, photoURL } = user;
   const name = displayName || "Guest";
   const image = photoURL;

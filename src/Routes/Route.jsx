@@ -14,6 +14,7 @@ import LessonPage from '../Pages/LessonPage';
 import MyProfile from '../Pages/MyProfile';
 import PrivateRoute from '../authProvider/PrivateRoute';
 import UpdateProfile from '../components/ragister/UpdateProfile';
+import AboutUs from '../Pages/AboutUs';
 
 const router = createBrowserRouter([
     {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
             {
                 path:"/",
                 element:<Home/>
+            },
+            {
+                path:"/about-us",
+                element:<AboutUs/>
             },
             {
                 path:"/tutorials",
