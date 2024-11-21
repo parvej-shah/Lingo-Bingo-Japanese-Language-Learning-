@@ -8,3 +8,6 @@ body{
   font-style: normal;
   overflow-x:hidden;
 }
+#root {
+  overflow-x: hidden;
+}

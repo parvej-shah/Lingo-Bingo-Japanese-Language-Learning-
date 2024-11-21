@@ -23,9 +23,9 @@ const HeroSection = () => {
     AOS.refresh();
   }, [reloadSlide]);
   return (
-    <section className= "bg-gradient-to-br from-neutral-gray to-light-blue-gray pt-14 flex items-center justify-center w-full">
+    <section className= "bg-gradient-to-br from-neutral-gray overflow-x-hidden to-light-blue-gray pt-14 flex items-center justify-center w-full">
       <Swiper
-      className="p-0 w-full"
+      className="p-0 w-full overflow-x-hidden"
       modules={[Autoplay, Pagination, Navigation]}
       autoplay={{
         delay: 3500,
@@ -40,7 +40,7 @@ const HeroSection = () => {
       onSlideChange={() =>setReloadSlide([true])}
       onSwiper={(swiper) => setReloadSlide([true])}
     >
-      <SwiperSlide className="w-full">
+      <SwiperSlide className="w-full overflow-x-hidden">
         <div className="container mx-auto pb-12 md:pb-0 px-2 sm:px-6  xl:px-20">
       <div className="w-full flex flex-col-reverse lg:flex-row md:justify-between items-center">
         <div
@@ -112,7 +112,7 @@ const HeroSection = () => {
       </div>
       </div>
       </SwiperSlide>
-      <SwiperSlide className="w-full">
+      <SwiperSlide className="w-full overflow-x-hidden">
       <div className="container mx-auto pb-12 md:pb-0 px-2 sm:px-6  xl:px-20">
       <div className="w-full flex flex-col-reverse lg:flex-row md:justify-between items-center">
         <div
@@ -177,7 +177,7 @@ const HeroSection = () => {
       </div>
       </div>
       </SwiperSlide>
-      <SwiperSlide className="w-full">
+      <SwiperSlide className="w-full overflow-x-hidden">
       <div className="container mx-auto pb-12 md:pb-0 px-2 sm:px-6 xl:px-20">
       <div className="w-full flex flex-col-reverse lg:flex-row md:justify-between items-center">
         <div
